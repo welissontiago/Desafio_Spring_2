@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.logo-uel {
+  margin: 0 auto;
+  height: 350px;
+  width: 450px;
+  display: block;
+}
+
+.background-Geral {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-consumo,
+.container-stonks,
+.container-media,
+.container-gastos {
+  background-color: #141414;
+  width: 280px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.container-consumo:hover,
+.container-stonks:hover,
+.container-media:hover,
+.container-gastos:hover {
+  border: 2px solid #00f0ff;
+}
+
+.container-consumo p,
+.container-stonks p,
+.container-media p,
+.container-gastos p {
+  margin-left: 45px;
+  color: #7a7f86;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.background-Geral h3 {
+  margin-left: 45px;
+}
+
+.background-Geral h3 span {
+  color: #7a7f86;
+  font-weight: 300;
+}
+
+.container-media h3 {
+  color: #8b5cf6;
+}
+
+.container-consumo h3 {
+  color: #00f0ff;
+}
+
+.container-stonks h3 {
+  color: #00ff88;
+}
+
+.container-gastos h3 {
+  color: #ffff00;
+}
+
+.background-flex {
+  margin-top: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.background-flex p {
+  width: 39px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00f0ff;
+  border-radius: 10px;
+  border: 1px solid #00f0ff;
+}
+
+.container-consumo img {
+  background-color: #1c2a41;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container-stonks img {
+  background-color: #173723;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container-media img {
+  background-color: #322141;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container-gastos img {
+  background-color: #3f3412;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+footer img {
+  width: 44px;
+  height: 44px;
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bg {
+  background-color: #141414;
+  border-radius: 5px;
+  padding: 20px 100px;
+  text-align: center;
+}
+
+.flex-redes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.linkedin,
+.github,
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer h1 {
+  background: linear-gradient(
+    90deg,
+    #0d496f 0.22%,
+    #c0daec 31.33%,
+    #71a7c7 58.62%,
+    #14547e 88.77%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer p {
+  color: #7a7f86;
+}
+
+footer a {
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    #0d496f 0.22%,
+    #c0daec 31.33%,
+    #71a7c7 58.62%,
+    #14547e 88.77%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

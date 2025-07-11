@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const body = document.querySelector("body");
-  const resultsContainer = document.getElementById("results");
   const formContainer = document.getElementById("form-container");
+
+  const consumoNecessarioEl = document.getElementById("consumo-necessario");
+  const menorValorEl = document.getElementById("menor-valor");
+  const mediaPrecosEl = document.getElementById("media-precos");
+  const gastosDiariosEl = document.getElementById("gastos-diarios");
+
   const audio = document.getElementById("background-music");
   const promise = audio.play();
 
@@ -71,21 +75,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let media = valorTotal / qtdPostos;
   let gastoDiario = 2 * (consumoNecessarioLitro * menorValor);
 
-  resultsContainer.innerHTML +=
-    "<p>" +
-    "O consumo necessário é " +
-    consumoNecessarioLitro.toFixed(2) +
-    " Litros" +
-    "</p>";
-  resultsContainer.innerHTML +=
-    "<p>" + "O menor valor pesquisado é R$ " + menorValor.toFixed(2) + "</p>";
-  resultsContainer.innerHTML +=
-    "<p>" + "A média dos valores pesquisados é R$ " + media.toFixed(2) + "</p>";
-  resultsContainer.innerHTML +=
-    "<p>" +
-    "O gasto diário (ida e volta) é R$ " +
-    gastoDiario.toFixed(2) +
-    "</p>";
+  consumoNecessarioEl.innerHTML = `${consumoNecessarioLitro.toFixed(
+    2
+  )} <span>Litros</span>`;
+  menorValorEl.innerHTML = `R$ ${menorValor.toFixed(2)} <span>por Litro</span>`;
+  mediaPrecosEl.innerHTML = `R$ ${media.toFixed(2)} <span>Por litro</span>`;
+  gastosDiariosEl.innerHTML = `R$ ${gastoDiario.toFixed(
+    2
+  )} <span>ida e volta</span>`;
 
-  formContainer.style.display = "block";
+  formContainer.style.display = "flex";
 });
